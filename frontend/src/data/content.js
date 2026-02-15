@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Muhammad Ashraf',
   tagline: 'Administration & Vehicle Management',
-  subtitle: '26 Years in Pakistan Army • Retired NCO',
+  subtitle: '26 Years in Pakistan Army • Retired Non-Commissioned Officer',
   email: 'mohsinashraf121519@gmail.com',
   phone: '+92 3066634093',
   location: 'Lahore, Pakistan',
