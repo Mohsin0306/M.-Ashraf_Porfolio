@@ -12,9 +12,7 @@ export default function Awards() {
             <span className="px-3 py-1 rounded-full bg-[#FA8112]/20 text-[#FA8112] text-sm font-bold">05</span>
             <h2 className="text-2xl md:text-4xl font-bold text-[#222222]">Awards & Recognition</h2>
           </div>
-          <p className="text-[#222222]/70 text-sm mb-8">
-            Add award images in <code className="px-2 py-0.5 rounded bg-[#F5E7C6] text-[#222222]">public/images/awards/</code>
-          </p>
+
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
             {awards.map((award, i) => (

@@ -28,7 +28,7 @@ export default function About() {
               </span>
               <div>
                 <h4 className="font-bold text-[#222222] mb-1">26 Years Service</h4>
-                <p className="text-[#222222]/70 text-sm">Pakistan Army • Retired NCO</p>
+                <p className="text-[#222222]/70 text-sm">Pakistan Army • Retired Non-Commission Officer</p>
               </div>
             </div>
             <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/60 border border-[#FA8112]/20 hover:border-[#FA8112]/40 transition-colors">

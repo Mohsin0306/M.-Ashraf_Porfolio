@@ -3,13 +3,13 @@ export const profile = {
   tagline: 'Administration & Vehicle Management',
   subtitle: '26 Years in Pakistan Army • Retired NCO',
   email: 'mohsinashraf121519@gmail.com',
-  phone: '03066634093',
+  phone: '+92 3066634093',
   location: 'Lahore, Pakistan',
   profileImage: '/images/profile/Ashraf.png',
 }
 
 export const about = {
-  text: 'Retired Pakistan Army as a Non-Commissioned Officer with 26 years of service. Experienced in military driving, vehicle administration, POL ledger maintenance, and personnel management. Disciplined, reliable, and operationally skilled.',
+  text: 'Retired Pakistan Army as a Non-Commissioned Officer with 26 years of service. Experienced in Military Admisitration, Vehicle Driving, POL (Pertrolium Oil & Lubricants) Management, Daily Running Accountant, and personnel management. Disciplined, reliable, and operationally skilled.',
 }
 
 export const experience = {
@@ -18,15 +18,15 @@ export const experience = {
     role: 'Vehicle Administrator & Driver',
     period: '03/2000 – 04/2026',
     location: 'Abbottabad, Pakistan',
-    description: 'Served 26 years in the Pakistan Army, retiring as Non-Commissioned Officer.',
+    description: 'Served 26 years in the Pakistan Army, retiring as Non-Commissioned Officer from PMA Abbottabad.',
   },
   details: {
     title: 'Administration & Vehicle Management',
     period: '2008 – 2026',
     location: 'Pakistan',
     items: [
-      { place: 'Swat (2012–2016)', desc: 'Managed vehicles, accounts, POL ledgers, and personnel.' },
-      { place: 'Lahore Cantt (2016–2018)', desc: 'Supervised vehicle operations, POL ledgers and administrative tasks.' },
+      { place: 'Swat (2008–2016)', desc: 'Managed vehicles, accounts, POL (Pertrolium Oil & Lubricants) ledgers, and personnel.' },
+      { place: 'Lahore Cantt (2016–2018)', desc: 'Supervised vehicle operations, POL (Pertrolium Oil & Lubricants) ledgers and administrative tasks.' },
       { place: 'Sialkot Cantt (2018–2021)', desc: 'Coordinated fleet management and personnel supervision.' },
       { place: 'Abbottabad PMA (2021–2026)', desc: 'Oversaw all vehicle operations, 200 vehicles, 200 persons and administration until retirement.' },
     ],
@@ -38,7 +38,7 @@ export const education = {
   institution: 'Khan Pur Sayedan Sialkot',
   period: '1987 – 1997',
   location: 'Sialkot, Pakistan',
-  description: 'Completed Matriculation with a focus on general education, building a strong foundation in core subjects including Mathematics, Islamic Studies and General Knowledge.',
+  description: 'Completed Matriculation with a focus on general education, building a strong foundation in core subjects including Mathematics, Islamic Studies, Urdu and General Knowledge.',
 }
 
 export const awards = [
@@ -86,7 +86,7 @@ export const certificatesAndCourses = [
     title: 'JCO-NCO Mechanical Course',
     date: '04/2019 – 05/2019',
     location: 'Nowshehra, Pakistan',
-    description: 'Completed JCO-NCO Mechanical Course with comprehensive training in vehicle mechanics, maintenance, and mechanical operations.',
+    description: 'Completed Junior Commission Officer & Non-Commissioned Officer Mechanical Course with comprehensive training in vehicle mechanics, maintenance, and mechanical operations.',
     img: 'JNM.jpeg',
     imgFolder: 'certificates',
   },
