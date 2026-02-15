@@ -14,7 +14,7 @@ function LanguageBar({ name, level, delay = 0 }) {
       </div>
       <div className="h-2.5 rounded-full bg-[#F5E7C6] overflow-hidden">
         <motion.div
-          className="h-full rounded-full bg-[#FA8112]"
+          className="h-full rounded-full bg-[var(--accent)]"
           initial={{ width: 0 }}
           animate={inView ? { width: `${percent}%` } : { width: 0 }}
           transition={{ duration: 1, delay, ease: 'easeOut' }}
@@ -30,7 +30,7 @@ export default function Skills() {
       <div className="max-w-2xl mx-auto">
         <FadeIn>
           <div className="flex items-center gap-3 mb-8">
-            <span className="px-3 py-1 rounded-full bg-[#FA8112]/20 text-[#FA8112] text-sm font-bold">04</span>
+            <span className="px-3 py-1 rounded-full bg-[var(--accent-20)] text-[var(--accent)] text-sm font-bold">04</span>
             <h2 className="text-2xl md:text-3xl font-bold text-[#222222]">Skills</h2>
           </div>
 
@@ -38,15 +38,15 @@ export default function Skills() {
             {skills.map((skill, i) => (
               <div
                 key={i}
-                className="flex items-center gap-4 py-3 px-4 rounded-lg hover:bg-[#FA8112]/5 transition-colors"
+                className="flex items-center gap-4 py-3 px-4 rounded-lg hover:bg-[var(--accent-15)] transition-colors"
               >
-                <span className="w-2 h-2 rounded-full bg-[#FA8112] shrink-0" />
+                <span className="w-2 h-2 rounded-full bg-[var(--accent)] shrink-0" />
                 <span className="text-[#222222] font-medium">{skill}</span>
               </div>
             ))}
           </div>
 
-          <div className="mt-10 pt-8 border-t border-[#FA8112]/20">
+          <div className="mt-10 pt-8 border-t border-[var(--accent-20)]">
             <p className="text-[#222222]/70 text-sm font-medium mb-5">Languages</p>
             <div className="space-y-5">
               {languages.map((lang, i) => (

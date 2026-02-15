@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
+/* Theme: default = #d0b691, orange = #FA8112 */
+:root,
+[data-theme="default"] {
+  --accent: #d0b691;
+  --accent-20: rgba(208, 182, 145, 0.2);
+  --accent-15: rgba(208, 182, 145, 0.15);
+  --accent-10: rgba(208, 182, 145, 0.1);
+  --accent-30: rgba(208, 182, 145, 0.3);
+  --accent-40: rgba(208, 182, 145, 0.4);
+  --accent-25: rgba(208, 182, 145, 0.25);
+  --accent-50: rgba(208, 182, 145, 0.5);
+  --accent-dark: #b89f6d;
+}
+
+[data-theme="orange"] {
+  --accent: #FA8112;
+  --accent-20: rgba(250, 129, 18, 0.2);
+  --accent-15: rgba(250, 129, 18, 0.15);
+  --accent-10: rgba(250, 129, 18, 0.1);
+  --accent-30: rgba(250, 129, 18, 0.3);
+  --accent-40: rgba(250, 129, 18, 0.4);
+  --accent-25: rgba(250, 129, 18, 0.25);
+  --accent-50: rgba(250, 129, 18, 0.5);
+  --accent-dark: #e67310;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -11,7 +37,7 @@
   }
 }
 
-/* Custom scrollbar - color scheme */
+/* Custom scrollbar - uses accent */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -23,17 +49,17 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #FA8112, #e67310);
+  background: linear-gradient(180deg, var(--accent), var(--accent-dark));
   border-radius: 10px;
   border: 2px solid #FAF3E1;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #e67310, #d6660e);
+  background: linear-gradient(180deg, var(--accent-dark), var(--accent));
 }
 
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #FA8112 #FAF3E1;
+  scrollbar-color: var(--accent) #FAF3E1;
 }

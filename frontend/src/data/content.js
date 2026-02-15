@@ -6,6 +6,7 @@ export const profile = {
   phone: '+92 3066634093',
   location: 'Lahore, Pakistan',
   profileImage: '/images/profile/Ashraf.png',
+  profileImageSkin: '/images/profile/Ashraf-skin.jpeg',
 }
 
 export const about = {

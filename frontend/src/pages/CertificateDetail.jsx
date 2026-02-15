@@ -16,7 +16,7 @@ export default function CertificateDetail() {
         <div className="min-h-screen flex items-center justify-center bg-[#FAF3E1]">
           <div className="text-center">
             <p className="text-[#222222] mb-4">Certificate not found</p>
-            <Link to="/#certificates" className="text-[#FA8112] font-medium hover:underline">
+            <Link to="/#certificates" className="text-[var(--accent)] font-medium hover:underline">
               Back to Certificates & Courses
             </Link>
           </div>
@@ -36,9 +36,9 @@ export default function CertificateDetail() {
             <button
               type="button"
               onClick={() => setShowFullImage(true)}
-              className="w-full md:w-auto md:max-w-full md:max-h-[calc(100vh-120px)] p-4 md:p-0 focus:outline-none focus:ring-2 focus:ring-[#FA8112] focus:ring-offset-2 rounded-xl"
+              className="w-full md:w-auto md:max-w-full md:max-h-[calc(100vh-120px)] p-4 md:p-0 focus:outline-none focus:ring-2 focus:ring-[var(--accent)] focus:ring-offset-2 rounded-xl"
             >
-              <div className="aspect-[4/3] md:aspect-auto md:max-h-[calc(100vh-140px)] rounded-xl overflow-hidden bg-[#F5E7C6] flex items-center justify-center border border-[#FA8112]/10 cursor-zoom-in">
+              <div className="aspect-[4/3] md:aspect-auto md:max-h-[calc(100vh-140px)] rounded-xl overflow-hidden bg-[#F5E7C6] flex items-center justify-center border border-[var(--accent-10)] cursor-zoom-in">
                 <img
                   src={imgSrc}
                   alt={item.title}
@@ -49,7 +49,7 @@ export default function CertificateDetail() {
                     if (p) { p.classList.remove('hidden'); p.classList.add('flex') }
                   }}
                 />
-                <div className="hidden w-full h-full items-center justify-center text-[#FA8112]/40">
+                <div className="hidden w-full h-full items-center justify-center text-[var(--accent-40)]">
                   <FileCheck size={120} strokeWidth={1.5} />
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default function CertificateDetail() {
           <div className="flex-1 overflow-y-auto p-6 md:p-10 md:flex md:flex-col md:justify-center">
             <Link
               to="/#certificates"
-              className="inline-flex items-center gap-2 text-[#FA8112] font-medium hover:underline mb-6 md:mb-8"
+              className="inline-flex items-center gap-2 text-[var(--accent)] font-medium hover:underline mb-6 md:mb-8"
             >
               <ArrowLeft size={20} />
               Back to Certificates & Courses
@@ -75,7 +75,7 @@ export default function CertificateDetail() {
                     {item.date}
                   </span>
                 )}
-                {item.date && item.location && <span className="text-[#FA8112]">·</span>}
+                {item.date && item.location && <span className="text-[var(--accent)]">·</span>}
                 {item.location && (
                   <span className="flex items-center gap-1">
                     <MapPin size={20} className="shrink-0" />
